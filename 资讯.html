@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+  
+    <!-- 引入Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- 最低支持到IE8 -->
+    <!-- html5 shim 和 Respond.js 用于让IE8支持html5元素和媒体查询 -->
+    <!-- 注意:通过file://协议，引入的responds.js文件，不能起效果 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+       h3,h4,p,div {
+        margin:0;
+        padding: 0;
+       }
+      body {
+        /*font-family: "微软雅黑";   */
+      }
+      .navbar-header a {
+        padding:0;
+      }
+      .jumbotron {
+        background: url(./img/bg.jpg);
+        color:#777;
+      }
+      .jumbotron p {
+        font-size: 18px;
+      }
+      .padding {
+        padding-top: 20px;
+      }
+      .table {
+        background: #eee;
+        padding-top: 20px;
+        padding-bottom:20px;
+        margin-bottom: 0;
+      }
+      .bg {
+        background: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+      }
+      .bg h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .container-fluid h4 {
+        font-weight: 500px;
+        font-size: 18px;
+      }
+      .container-fluid p {
+        margin-top: 15px;
+      }
+      .aside .container-fluid {
+        background: #fff;
+        margin-top: 15px;
+        padding-bottom: 15px;
+      }
+      .aside .asideblq {
+        padding-top: 15px;
+      }
+      .aside h4 {
+        font-size: 14px;
+      }
+      .mt {
+        margin-top: 15px;
+      }
+      footer {
+        background: #666;
+        padding:20px 0;
+      }
+      footer span {
+        padding-left: 15px;
+      }
+      footer .container {
+        color:#ccc;
+      }
+      @media (max-width: 768px) {
+        .container-fluid h4 {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <!-- 导航开始 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-static-top">
+      <div class="container">
+        <div class="nav navbar-header">
+         <a href="index.html" class="navbar-brand"><img src="./img/logo.png" alt="logo"></a>
+          <button type="button" data-toggle="collapse" class="navbar-toggle" data-target="#mycollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mycollapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./01项目实战.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+            <li class="active"><a href="./资讯.html"><span class="glyphicon glyphicon-list"></span>资讯</a></li>
+            <li><a href="./案例.html"><span class="glyphicon glyphicon-fire"></span>案例</a></li>
+            <li><a href="./关于.html"><span class="glyphicon glyphicon-home"></span>关于</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航结束 -->
+    <div class="jumbotron">
+      <div class="container padding">
+        <h2>资讯</h2>
+        <p>企业内训的最新动态、资源等...</p>
+      </div>
+    </div>
+    <div class="table">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="container-fluid">
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>广电总局发布TVOS2.0 华为阿里参与研发</h4>
+                 <p class="hidden-sm hidden-xs">TVOS2.0是在TVOS1.0与华为MediaOS及阿里巴巴YunOS融合的基础上，打造的新一代智能电视操作系统。华为主要承担开发工作，内置的电视购物商城由阿里方面负责。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                 <p class="hidden-sm hidden-xs">苹果明年初有可能对外发布一款经过升级的四英寸手机，相当于iPhone 5s。该手机将会配置苹果在2015年旗舰手机中采用的A9处理器。配置性能如此强大的应用处理器？</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>六家互联网公司发声明 抵制流量劫持等违法行为</h4>
+                 <p class="hidden-sm hidden-xs">六家互联网公司（今日头条、美团大众点评网、360、腾讯、微博、小米科技）发布联合声明，呼吁有关运营商打击流量劫持，重视互联网公司被流量劫持，可能导致的严重后果。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>广电总局发布TVOS2.0 华为阿里参与研发</h4>
+                 <p class="hidden-sm hidden-xs">TVOS2.0是在TVOS1.0与华为MediaOS及阿里巴巴YunOS融合的基础上，打造的新一代智能电视操作系统。华为主要承担开发工作，内置的电视购物商城由阿里方面负责。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                 <p class="hidden-sm hidden-xs">苹果明年初有可能对外发布一款经过升级的四英寸手机，相当于iPhone 5s。该手机将会配置苹果在2015年旗舰手机中采用的A9处理器。配置性能如此强大的应用处理器？</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>六家互联网公司发声明 抵制流量劫持等违法行为</h4>
+                 <p class="hidden-sm hidden-xs">六家互联网公司（今日头条、美团大众点评网、360、腾讯、微博、小米科技）发布联合声明，呼吁有关运营商打击流量劫持，重视互联网公司被流量劫持，可能导致的严重后果。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>广电总局发布TVOS2.0 华为阿里参与研发</h4>
+                 <p class="hidden-sm hidden-xs">TVOS2.0是在TVOS1.0与华为MediaOS及阿里巴巴YunOS融合的基础上，打造的新一代智能电视操作系统。华为主要承担开发工作，内置的电视购物商城由阿里方面负责。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                 <p class="hidden-sm hidden-xs">苹果明年初有可能对外发布一款经过升级的四英寸手机，相当于iPhone 5s。该手机将会配置苹果在2015年旗舰手机中采用的A9处理器。配置性能如此强大的应用处理器？</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>六家互联网公司发声明 抵制流量劫持等违法行为</h4>
+                 <p class="hidden-sm hidden-xs">六家互联网公司（今日头条、美团大众点评网、360、腾讯、微博、小米科技）发布联合声明，呼吁有关运营商打击流量劫持，重视互联网公司被流量劫持，可能导致的严重后果。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-4 col-xs-4">
+                  <a href=""><img src="img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-8 col-xs-8">
+                 <h4>广电总局发布TVOS2.0 华为阿里参与研发</h4>
+                 <p class="hidden-sm hidden-xs">TVOS2.0是在TVOS1.0与华为MediaOS及阿里巴巴YunOS融合的基础上，打造的新一代智能电视操作系统。华为主要承担开发工作，内置的电视购物商城由阿里方面负责。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-5 col-xs-5">
+                  <a href=""><img src="img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-7">
+                 <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                 <p class="hidden-sm hidden-xs">苹果明年初有可能对外发布一款经过升级的四英寸手机，相当于iPhone 5s。该手机将会配置苹果在2015年旗舰手机中采用的A9处理器。配置性能如此强大的应用处理器？</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row bg">
+                <div class="col-md-5 col-sm-5 col-xs-5">
+                  <a href=""><img src="img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-7">
+                 <h4>六家互联网公司发声明 抵制流量劫持等违法行为</h4>
+                 <p class="hidden-sm hidden-xs">六家互联网公司（今日头条、美团大众点评网、360、腾讯、微博、小米科技）发布联合声明，呼吁有关运营商打击流量劫持，重视互联网公司被流量劫持，可能导致的严重后果。</p>
+                 <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-hidden col-xs-hidden aside">
+            <div class="container-fluid">
+              <div class="row asideblq">
+                <div class="col-md-12">
+                  <blockquote>热门资讯</blockquote>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+              <div class="row mt">
+                <div class="col-md-6">
+                  <a href=""><img src="./img/info3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="col-md-6">
+                  <h4>苹果四寸手机为何要配置强大的A9处理器？</h4>
+                  <p>admin 15 / 10 / 11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <ul class="list-inline">
+            <li>企业培训<span>|</span></li>
+            <li>合作事宜<span>|</span></li>
+            <li>版权投诉<span>|</span></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">苏ICP 备12345678. © 2009-2016 瓢城企训网. Powered by Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+<html>
